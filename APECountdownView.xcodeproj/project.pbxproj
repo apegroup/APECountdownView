@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1842E3311C6A3EAC00CD0EE2 /* APECountdownView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */; };
+		1873D5A71C6B2C3A00E68AA4 /* CountdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5A61C6B2C3A00E68AA4 /* CountdownView.xib */; };
+		1873D5A91C6B2E5F00E68AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5A81C6B2E5F00E68AA4 /* Assets.xcassets */; };
+		18ACC3621C6A3F8E004AD2B6 /* APECountdownView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ACC3611C6A3F8E004AD2B6 /* APECountdownView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18ACC36B1C6A402F004AD2B6 /* APECountdownViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3671C6A3FA3004AD2B6 /* APECountdownViewTests.swift */; };
+		18ACC3701C6A411A004AD2B6 /* CountdownNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36C1C6A411A004AD2B6 /* CountdownNumberView.swift */; };
+		18ACC3711C6A411A004AD2B6 /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36D1C6A411A004AD2B6 /* CountdownViewModel.swift */; };
+		18ACC3721C6A411A004AD2B6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36E1C6A411A004AD2B6 /* StringExtensions.swift */; };
+		18ACC3731C6A411A004AD2B6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */; };
+		18ACC3751C6A48A1004AD2B6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ACC3741C6A48A1004AD2B6 /* RxSwift.framework */; };
+		18ACC3771C6A48A5004AD2B6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ACC3761C6A48A5004AD2B6 /* RxCocoa.framework */; };
+		18ACC37C1C6A4E09004AD2B6 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */; };
+		18ACC37E1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1842E3321C6A3EAC00CD0EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1842E31D1C6A3EAC00CD0EE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1842E3251C6A3EAC00CD0EE2;
+			remoteInfo = APECountdownView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APECountdownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842E3301C6A3EAC00CD0EE2 /* APECountdownViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APECountdownViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1873D5A61C6B2C3A00E68AA4 /* CountdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownView.xib; sourceTree = "<group>"; };
+		1873D5A81C6B2E5F00E68AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18ACC3611C6A3F8E004AD2B6 /* APECountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APECountdownView.h; sourceTree = "<group>"; };
+		18ACC3641C6A3F9B004AD2B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ACC3671C6A3FA3004AD2B6 /* APECountdownViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APECountdownViewTests.swift; sourceTree = "<group>"; };
+		18ACC3681C6A3FA3004AD2B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ACC36C1C6A411A004AD2B6 /* CountdownNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownNumberView.swift; sourceTree = "<group>"; };
+		18ACC36D1C6A411A004AD2B6 /* CountdownViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
+		18ACC36E1C6A411A004AD2B6 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		18ACC3741C6A48A1004AD2B6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		18ACC3761C6A48A5004AD2B6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimeLeft.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1842E3221C6A3EAC00CD0EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC3751C6A48A1004AD2B6 /* RxSwift.framework in Frameworks */,
+				18ACC3771C6A48A5004AD2B6 /* RxCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842E32D1C6A3EAC00CD0EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842E3311C6A3EAC00CD0EE2 /* APECountdownView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1842E31C1C6A3EAC00CD0EE2 = {
+			isa = PBXGroup;
+			children = (
+				18ACC3761C6A48A5004AD2B6 /* RxCocoa.framework */,
+				18ACC3741C6A48A1004AD2B6 /* RxSwift.framework */,
+				1842E3271C6A3EAC00CD0EE2 /* Products */,
+				1873D5A51C6B2BEE00E68AA4 /* Resources */,
+				18ACC3601C6A3F8E004AD2B6 /* Source */,
+				18ACC3631C6A3F9B004AD2B6 /* SupportFiles */,
+				18ACC3661C6A3FA3004AD2B6 /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		1842E3271C6A3EAC00CD0EE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */,
+				1842E3301C6A3EAC00CD0EE2 /* APECountdownViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1873D5A51C6B2BEE00E68AA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1873D5A81C6B2E5F00E68AA4 /* Assets.xcassets */,
+				1873D5A61C6B2C3A00E68AA4 /* CountdownView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18ACC3601C6A3F8E004AD2B6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18ACC3611C6A3F8E004AD2B6 /* APECountdownView.h */,
+				18ACC36C1C6A411A004AD2B6 /* CountdownNumberView.swift */,
+				18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */,
+				18ACC36D1C6A411A004AD2B6 /* CountdownViewModel.swift */,
+				18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */,
+				18ACC36E1C6A411A004AD2B6 /* StringExtensions.swift */,
+				18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		18ACC3631C6A3F9B004AD2B6 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				18ACC3641C6A3F9B004AD2B6 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		18ACC3661C6A3FA3004AD2B6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18ACC3671C6A3FA3004AD2B6 /* APECountdownViewTests.swift */,
+				18ACC3681C6A3FA3004AD2B6 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1842E3231C6A3EAC00CD0EE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC3621C6A3F8E004AD2B6 /* APECountdownView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1842E3251C6A3EAC00CD0EE2 /* APECountdownView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842E33A1C6A3EAC00CD0EE2 /* Build configuration list for PBXNativeTarget "APECountdownView" */;
+			buildPhases = (
+				1842E3211C6A3EAC00CD0EE2 /* Sources */,
+				1842E3221C6A3EAC00CD0EE2 /* Frameworks */,
+				1842E3231C6A3EAC00CD0EE2 /* Headers */,
+				1842E3241C6A3EAC00CD0EE2 /* Resources */,
+				18ACC3781C6A48CD004AD2B6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APECountdownView;
+			productName = APECountdownView;
+			productReference = 1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1842E32F1C6A3EAC00CD0EE2 /* APECountdownViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1842E33D1C6A3EAC00CD0EE2 /* Build configuration list for PBXNativeTarget "APECountdownViewTests" */;
+			buildPhases = (
+				1842E32C1C6A3EAC00CD0EE2 /* Sources */,
+				1842E32D1C6A3EAC00CD0EE2 /* Frameworks */,
+				1842E32E1C6A3EAC00CD0EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1842E3331C6A3EAC00CD0EE2 /* PBXTargetDependency */,
+			);
+			name = APECountdownViewTests;
+			productName = APECountdownViewTests;
+			productReference = 1842E3301C6A3EAC00CD0EE2 /* APECountdownViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1842E31D1C6A3EAC00CD0EE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Apegroup;
+				TargetAttributes = {
+					1842E3251C6A3EAC00CD0EE2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					1842E32F1C6A3EAC00CD0EE2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1842E3201C6A3EAC00CD0EE2 /* Build configuration list for PBXProject "APECountdownView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1842E31C1C6A3EAC00CD0EE2;
+			productRefGroup = 1842E3271C6A3EAC00CD0EE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1842E3251C6A3EAC00CD0EE2 /* APECountdownView */,
+				1842E32F1C6A3EAC00CD0EE2 /* APECountdownViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1842E3241C6A3EAC00CD0EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1873D5A91C6B2E5F00E68AA4 /* Assets.xcassets in Resources */,
+				1873D5A71C6B2C3A00E68AA4 /* CountdownView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842E32E1C6A3EAC00CD0EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18ACC3781C6A48CD004AD2B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1842E3211C6A3EAC00CD0EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC37C1C6A4E09004AD2B6 /* CountdownView.swift in Sources */,
+				18ACC3721C6A411A004AD2B6 /* StringExtensions.swift in Sources */,
+				18ACC3711C6A411A004AD2B6 /* CountdownViewModel.swift in Sources */,
+				18ACC3731C6A411A004AD2B6 /* UIViewExtensions.swift in Sources */,
+				18ACC37E1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift in Sources */,
+				18ACC3701C6A411A004AD2B6 /* CountdownNumberView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1842E32C1C6A3EAC00CD0EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC36B1C6A402F004AD2B6 /* APECountdownViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1842E3331C6A3EAC00CD0EE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1842E3251C6A3EAC00CD0EE2 /* APECountdownView */;
+			targetProxy = 1842E3321C6A3EAC00CD0EE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1842E3381C6A3EAC00CD0EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1842E3391C6A3EAC00CD0EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1842E33B1C6A3EAC00CD0EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SupportFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1842E33C1C6A3EAC00CD0EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SupportFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1842E33E1C6A3EAC00CD0EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1842E33F1C6A3EAC00CD0EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1842E3201C6A3EAC00CD0EE2 /* Build configuration list for PBXProject "APECountdownView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842E3381C6A3EAC00CD0EE2 /* Debug */,
+				1842E3391C6A3EAC00CD0EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842E33A1C6A3EAC00CD0EE2 /* Build configuration list for PBXNativeTarget "APECountdownView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842E33B1C6A3EAC00CD0EE2 /* Debug */,
+				1842E33C1C6A3EAC00CD0EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1842E33D1C6A3EAC00CD0EE2 /* Build configuration list for PBXNativeTarget "APECountdownViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1842E33E1C6A3EAC00CD0EE2 /* Debug */,
+				1842E33F1C6A3EAC00CD0EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1842E31D1C6A3EAC00CD0EE2 /* Project object */;
+}

@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1856A1F21C6B30D5001C7051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A1F11C6B30D5001C7051 /* AppDelegate.swift */; };
+		1856A1F41C6B30D5001C7051 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A1F31C6B30D5001C7051 /* ViewController.swift */; };
+		1856A1F71C6B30D5001C7051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1F51C6B30D5001C7051 /* Main.storyboard */; };
+		1856A1F91C6B30D5001C7051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1F81C6B30D5001C7051 /* Assets.xcassets */; };
+		1856A1FC1C6B30D5001C7051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1FA1C6B30D5001C7051 /* LaunchScreen.storyboard */; };
+		189572011C6B3B3A002BB07F /* APECountdownView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; };
+		189572021C6B3B3A002BB07F /* APECountdownView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		189571FC1C6B3102002BB07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1842E3261C6A3EAC00CD0EE2;
+			remoteInfo = APECountdownView;
+		};
+		189571FE1C6B3102002BB07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1842E3301C6A3EAC00CD0EE2;
+			remoteInfo = APECountdownViewTests;
+		};
+		189572031C6B3B3A002BB07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1842E3251C6A3EAC00CD0EE2;
+			remoteInfo = APECountdownView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		189572051C6B3B3A002BB07F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				189572021C6B3B3A002BB07F /* APECountdownView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1856A1EE1C6B30D5001C7051 /* APECountdownViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APECountdownViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1856A1F11C6B30D5001C7051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1856A1F31C6B30D5001C7051 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1856A1F61C6B30D5001C7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1856A1F81C6B30D5001C7051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1856A1FB1C6B30D5001C7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1856A1FD1C6B30D5001C7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APECountdownView.xcodeproj; path = ../APECountdownView.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1856A1EB1C6B30D5001C7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189572011C6B3B3A002BB07F /* APECountdownView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1856A1E51C6B30D5001C7051 = {
+			isa = PBXGroup;
+			children = (
+				189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */,
+				1856A1F01C6B30D5001C7051 /* APECountdownViewDemo */,
+				1856A1EF1C6B30D5001C7051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1856A1EF1C6B30D5001C7051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1856A1EE1C6B30D5001C7051 /* APECountdownViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1856A1F01C6B30D5001C7051 /* APECountdownViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1856A1F11C6B30D5001C7051 /* AppDelegate.swift */,
+				1856A1F31C6B30D5001C7051 /* ViewController.swift */,
+				1856A1F51C6B30D5001C7051 /* Main.storyboard */,
+				1856A1F81C6B30D5001C7051 /* Assets.xcassets */,
+				1856A1FA1C6B30D5001C7051 /* LaunchScreen.storyboard */,
+				1856A1FD1C6B30D5001C7051 /* Info.plist */,
+			);
+			path = APECountdownViewDemo;
+			sourceTree = "<group>";
+		};
+		189571F81C6B3102002BB07F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189571FD1C6B3102002BB07F /* APECountdownView.framework */,
+				189571FF1C6B3102002BB07F /* APECountdownViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1856A1ED1C6B30D5001C7051 /* APECountdownViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1856A2001C6B30D5001C7051 /* Build configuration list for PBXNativeTarget "APECountdownViewDemo" */;
+			buildPhases = (
+				1856A1EA1C6B30D5001C7051 /* Sources */,
+				1856A1EB1C6B30D5001C7051 /* Frameworks */,
+				1856A1EC1C6B30D5001C7051 /* Resources */,
+				189572051C6B3B3A002BB07F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189572041C6B3B3A002BB07F /* PBXTargetDependency */,
+			);
+			name = APECountdownViewDemo;
+			productName = APECountdownViewDemo;
+			productReference = 1856A1EE1C6B30D5001C7051 /* APECountdownViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1856A1E61C6B30D5001C7051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Apegroup;
+				TargetAttributes = {
+					1856A1ED1C6B30D5001C7051 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1856A1E91C6B30D5001C7051 /* Build configuration list for PBXProject "APECountdownViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1856A1E51C6B30D5001C7051;
+			productRefGroup = 1856A1EF1C6B30D5001C7051 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 189571F81C6B3102002BB07F /* Products */;
+					ProjectRef = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1856A1ED1C6B30D5001C7051 /* APECountdownViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		189571FD1C6B3102002BB07F /* APECountdownView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = APECountdownView.framework;
+			remoteRef = 189571FC1C6B3102002BB07F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		189571FF1C6B3102002BB07F /* APECountdownViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APECountdownViewTests.xctest;
+			remoteRef = 189571FE1C6B3102002BB07F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1856A1EC1C6B30D5001C7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1856A1FC1C6B30D5001C7051 /* LaunchScreen.storyboard in Resources */,
+				1856A1F91C6B30D5001C7051 /* Assets.xcassets in Resources */,
+				1856A1F71C6B30D5001C7051 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1856A1EA1C6B30D5001C7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1856A1F41C6B30D5001C7051 /* ViewController.swift in Sources */,
+				1856A1F21C6B30D5001C7051 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189572041C6B3B3A002BB07F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APECountdownView;
+			targetProxy = 189572031C6B3B3A002BB07F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1856A1F51C6B30D5001C7051 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1856A1F61C6B30D5001C7051 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1856A1FA1C6B30D5001C7051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1856A1FB1C6B30D5001C7051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1856A1FE1C6B30D5001C7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1856A1FF1C6B30D5001C7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1856A2011C6B30D5001C7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = APECountdownViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1856A2021C6B30D5001C7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = APECountdownViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1856A1E91C6B30D5001C7051 /* Build configuration list for PBXProject "APECountdownViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1856A1FE1C6B30D5001C7051 /* Debug */,
+				1856A1FF1C6B30D5001C7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1856A2001C6B30D5001C7051 /* Build configuration list for PBXNativeTarget "APECountdownViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1856A2011C6B30D5001C7051 /* Debug */,
+				1856A2021C6B30D5001C7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1856A1E61C6B30D5001C7051 /* Project object */;
+}
