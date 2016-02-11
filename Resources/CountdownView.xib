@@ -43,6 +43,14 @@
                 <outletCollection property="countdownTitleLabels" destination="uEm-mb-zGG" collectionClass="NSMutableArray" id="sBx-Dc-1py"/>
                 <outletCollection property="countdownTitleLabels" destination="8rj-65-koG" collectionClass="NSMutableArray" id="3eb-PB-tQy"/>
                 <outletCollection property="countdownTitleLabels" destination="COz-X4-fMH" collectionClass="NSMutableArray" id="tix-eT-jmg"/>
+                <outletCollection property="countdownNumberViews" destination="hp3-rf-m2G" collectionClass="NSMutableArray" id="5HS-yw-Bt3"/>
+                <outletCollection property="countdownNumberViews" destination="Ncs-M5-a2m" collectionClass="NSMutableArray" id="VUG-9K-rnO"/>
+                <outletCollection property="countdownNumberViews" destination="7pP-uH-Ouf" collectionClass="NSMutableArray" id="rbo-bg-pkV"/>
+                <outletCollection property="countdownNumberViews" destination="IVI-kS-Pig" collectionClass="NSMutableArray" id="Q9i-z7-0LD"/>
+                <outletCollection property="countdownNumberViews" destination="tmx-bJ-nIZ" collectionClass="NSMutableArray" id="0J7-Kh-1aD"/>
+                <outletCollection property="countdownNumberViews" destination="nRN-1Y-oW1" collectionClass="NSMutableArray" id="8Gr-Kj-HH6"/>
+                <outletCollection property="countdownNumberViews" destination="ozc-ln-Ji0" collectionClass="NSMutableArray" id="jsi-3C-B5C"/>
+                <outletCollection property="countdownNumberViews" destination="FCw-ft-SbB" collectionClass="NSMutableArray" id="Qvu-JM-UQU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
