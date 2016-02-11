@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18474AB61C6CBBF00073763F /* APECountdownView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		18474AB81C6CBC350073763F /* APECountdownView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18474CC31C6CD29B0081BABE /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18474CC21C6CD29B0081BABE /* RxSwift.framework */; };
+		18474CC41C6CD29B0081BABE /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18474CC21C6CD29B0081BABE /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18474CC61C6CD2AC0081BABE /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18474CC51C6CD2AC0081BABE /* RxCocoa.framework */; };
+		18474CC71C6CD2AC0081BABE /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18474CC51C6CD2AC0081BABE /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1856A1F21C6B30D5001C7051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A1F11C6B30D5001C7051 /* AppDelegate.swift */; };
 		1856A1F41C6B30D5001C7051 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A1F31C6B30D5001C7051 /* ViewController.swift */; };
 		1856A1F71C6B30D5001C7051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1F51C6B30D5001C7051 /* Main.storyboard */; };
 		1856A1F91C6B30D5001C7051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1F81C6B30D5001C7051 /* Assets.xcassets */; };
 		1856A1FC1C6B30D5001C7051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1FA1C6B30D5001C7051 /* LaunchScreen.storyboard */; };
-		189572011C6B3B3A002BB07F /* APECountdownView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; };
-		189572021C6B3B3A002BB07F /* APECountdownView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18474AB91C6CBC350073763F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1842E3251C6A3EAC00CD0EE2;
+			remoteInfo = APECountdownView;
+		};
 		189571FC1C6B3102002BB07F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
@@ -31,23 +42,18 @@
 			remoteGlobalIDString = 1842E3301C6A3EAC00CD0EE2;
 			remoteInfo = APECountdownViewTests;
 		};
-		189572031C6B3B3A002BB07F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1842E3251C6A3EAC00CD0EE2;
-			remoteInfo = APECountdownView;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		189572051C6B3B3A002BB07F /* Embed Frameworks */ = {
+		18474ABB1C6CBC350073763F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				189572021C6B3B3A002BB07F /* APECountdownView.framework in Embed Frameworks */,
+				18474CC71C6CD2AC0081BABE /* RxCocoa.framework in Embed Frameworks */,
+				18474CC41C6CD29B0081BABE /* RxSwift.framework in Embed Frameworks */,
+				18474AB81C6CBC350073763F /* APECountdownView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18474CC21C6CD29B0081BABE /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		18474CC51C6CD2AC0081BABE /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1856A1EE1C6B30D5001C7051 /* APECountdownViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APECountdownViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1856A1F11C6B30D5001C7051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1856A1F31C6B30D5001C7051 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189572011C6B3B3A002BB07F /* APECountdownView.framework in Frameworks */,
+				18474CC61C6CD2AC0081BABE /* RxCocoa.framework in Frameworks */,
+				18474CC31C6CD29B0081BABE /* RxSwift.framework in Frameworks */,
+				18474AB61C6CBBF00073763F /* APECountdownView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,8 @@
 		1856A1E51C6B30D5001C7051 = {
 			isa = PBXGroup;
 			children = (
+				18474CC51C6CD2AC0081BABE /* RxCocoa.framework */,
+				18474CC21C6CD29B0081BABE /* RxSwift.framework */,
 				189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */,
 				1856A1F01C6B30D5001C7051 /* APECountdownViewDemo */,
 				1856A1EF1C6B30D5001C7051 /* Products */,
@@ -126,12 +138,12 @@
 				1856A1EA1C6B30D5001C7051 /* Sources */,
 				1856A1EB1C6B30D5001C7051 /* Frameworks */,
 				1856A1EC1C6B30D5001C7051 /* Resources */,
-				189572051C6B3B3A002BB07F /* Embed Frameworks */,
+				18474ABB1C6CBC350073763F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				189572041C6B3B3A002BB07F /* PBXTargetDependency */,
+				18474ABA1C6CBC350073763F /* PBXTargetDependency */,
 			);
 			name = APECountdownViewDemo;
 			productName = APECountdownViewDemo;
@@ -150,6 +162,7 @@
 				TargetAttributes = {
 					1856A1ED1C6B30D5001C7051 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Q48PCXNS55;
 					};
 				};
 			};
@@ -220,10 +233,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		189572041C6B3B3A002BB07F /* PBXTargetDependency */ = {
+		18474ABA1C6CBC350073763F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APECountdownView;
-			targetProxy = 189572031C6B3B3A002BB07F /* PBXContainerItemProxy */;
+			targetProxy = 18474AB91C6CBC350073763F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,7 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = APECountdownViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewDemo;
@@ -346,7 +361,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = APECountdownViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apegroup.APECountdownViewDemo;
