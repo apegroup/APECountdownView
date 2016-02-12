@@ -47,8 +47,6 @@
 		18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimeLeft.swift; sourceTree = "<group>"; };
-		18E3213C1C6CCE1A00B12FEF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
-		18E3213E1C6CCE2100B12FEF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +135,6 @@
 			children = (
 				18A6979C1C6CD00000352159 /* RxSwift.framework */,
 				18A6979A1C6CCFF500352159 /* RxCocoa.framework */,
-				18E3213E1C6CCE2100B12FEF /* RxCocoa.framework */,
-				18E3213C1C6CCE1A00B12FEF /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
