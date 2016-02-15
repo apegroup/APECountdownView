@@ -17,7 +17,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MyApp' do
-	pod 'ToastMaster', :git => 'https://github.com/apegroup/APECountdownView.git'
+	pod 'APECountdownView', :git => 'https://github.com/apegroup/APECountdownView.git'
 end
 ```
 Note that this requires CocoaPods version 36, and your iOS deployment target to be at least 8.0:
@@ -27,6 +27,10 @@ You can use [Carthage](https://github.com/Carthage/Carthage) to install `APECoun
 ```
 github "apegroup/APECountdownView"
 ```
+Make sure to add APECountdownView.framework, RxSwift.framework and RxCocoa.framework to "Linked Frameworks and Libraries" and "copy-frameworks" Build Phases.
+
+Note if you link with a .framework file you can't use IBDesignable and IBInspectable. Instead you have to manually write class: CountdownView and module: APECountdownView in your UIView within interface builder. Then change the appearance in code.
+[Bug report](https://openradar.appspot.com/23114017) 
 
 ##Usage interface builder
 - Drag a UIView into your storyboard (or nib file).
@@ -58,7 +62,7 @@ countdownView.startCountdown(endDate, onCompleted: { _ in
 ```
 ####Change appearance
 ```swift
-countdownView.size = CGSize(width: 40, height: 30)
+countdownView.size = CGSize(width: 30, height: 40)
 countdownView.groupSpace = -3
 countdownView.sectionSpace = 3
 countdownView.gradientColor1 = UIColor(red: 0.290, green: 0.290, blue: 0.290, alpha: 1.000)
