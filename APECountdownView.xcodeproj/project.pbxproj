@@ -19,6 +19,8 @@
 		18ACC3731C6A411A004AD2B6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */; };
 		18ACC37C1C6A4E09004AD2B6 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */; };
 		18ACC37E1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */; };
+		18D857801C7217EA00D69170 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF71C7209EE009B9D0F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18D857811C7217EE00D69170 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A41BF81C7209EE009B9D0F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,20 @@
 			remoteInfo = APECountdownView;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18D8577F1C7217C200D69170 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18D857811C7217EE00D69170 /* RxSwift.framework in CopyFiles */,
+				18D857801C7217EA00D69170 /* RxCocoa.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APECountdownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +178,7 @@
 				1842E3231C6A3EAC00CD0EE2 /* Headers */,
 				1842E3241C6A3EAC00CD0EE2 /* Resources */,
 				18A41BF61C720942009B9D0F /* ShellScript */,
+				18D8577F1C7217C200D69170 /* CopyFiles */,
 			);
 			buildRules = (
 			);
