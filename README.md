@@ -2,7 +2,7 @@
 A simple and easy count down view.
 
 <p align="center">
-  <img src="https://cloud.githubusercontent.com/assets/16682908/12980056/fb91f1ac-d0da-11e5-8317-b1c97daf9d30.gif" alt="Countdown">
+  <img src="https://cloud.githubusercontent.com/assets/16682908/13053024/8cc5c35e-d402-11e5-9370-94ee2e5752cc.gif" alt="Countdown">
 </p>
 
 ##Requirements
