@@ -171,18 +171,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1891B3B01C6DEF2600A449E9 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APECountdownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1842E3301C6A3EAC00CD0EE2 /* APECountdownViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APECountdownViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -338,8 +326,6 @@
 				1842E3221C6A3EAC00CD0EE2 /* Frameworks */,
 				1842E3231C6A3EAC00CD0EE2 /* Headers */,
 				1842E3241C6A3EAC00CD0EE2 /* Resources */,
-				18C669611C6CC82700B14D0A /* ShellScript */,
-				1891B3B01C6DEF2600A449E9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -570,25 +556,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		18C669611C6CC82700B14D0A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1842E3211C6A3EAC00CD0EE2 /* Sources */ = {
