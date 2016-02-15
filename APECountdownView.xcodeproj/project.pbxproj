@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1842E3311C6A3EAC00CD0EE2 /* APECountdownView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */; };
 		1873D5A71C6B2C3A00E68AA4 /* CountdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5A61C6B2C3A00E68AA4 /* CountdownView.xib */; };
+		18A41BF91C7209EE009B9D0F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A41BF71C7209EE009B9D0F /* RxCocoa.framework */; };
+		18A41BFA1C7209EE009B9D0F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A41BF81C7209EE009B9D0F /* RxSwift.framework */; };
 		18ACC3621C6A3F8E004AD2B6 /* APECountdownView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ACC3611C6A3F8E004AD2B6 /* APECountdownView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18ACC36B1C6A402F004AD2B6 /* APECountdownViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3671C6A3FA3004AD2B6 /* APECountdownViewTests.swift */; };
 		18ACC3701C6A411A004AD2B6 /* CountdownNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36C1C6A411A004AD2B6 /* CountdownNumberView.swift */; };
@@ -17,8 +19,6 @@
 		18ACC3731C6A411A004AD2B6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */; };
 		18ACC37C1C6A4E09004AD2B6 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */; };
 		18ACC37E1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */; };
-		18FCF57F1C71F6E0000727BD /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCF57E1C71F6E0000727BD /* RxCocoa.framework */; };
-		18FCF5811C71F6E6000727BD /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCF5801C71F6E6000727BD /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,8 @@
 		1842E3261C6A3EAC00CD0EE2 /* APECountdownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APECountdownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1842E3301C6A3EAC00CD0EE2 /* APECountdownViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APECountdownViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1873D5A61C6B2C3A00E68AA4 /* CountdownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountdownView.xib; sourceTree = "<group>"; };
+		18A41BF71C7209EE009B9D0F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		18A41BF81C7209EE009B9D0F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		18ACC3611C6A3F8E004AD2B6 /* APECountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APECountdownView.h; sourceTree = "<group>"; };
 		18ACC3641C6A3F9B004AD2B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18ACC3671C6A3FA3004AD2B6 /* APECountdownViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APECountdownViewTests.swift; sourceTree = "<group>"; };
@@ -45,8 +47,6 @@
 		18ACC36F1C6A411A004AD2B6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		18ACC37B1C6A4E09004AD2B6 /* CountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		18ACC37D1C6A4F0C004AD2B6 /* CountdownTimeLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimeLeft.swift; sourceTree = "<group>"; };
-		18FCF57E1C71F6E0000727BD /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxCocoa.framework"; sourceTree = "<group>"; };
-		18FCF5801C71F6E6000727BD /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "Carthage/Checkouts/RxSwift/build/Debug-iphoneos/RxSwift.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FCF5811C71F6E6000727BD /* RxSwift.framework in Frameworks */,
-				18FCF57F1C71F6E0000727BD /* RxCocoa.framework in Frameworks */,
+				18A41BFA1C7209EE009B9D0F /* RxSwift.framework in Frameworks */,
+				18A41BF91C7209EE009B9D0F /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +133,8 @@
 		18FCF5821C71F6EB000727BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18FCF5801C71F6E6000727BD /* RxSwift.framework */,
-				18FCF57E1C71F6E0000727BD /* RxCocoa.framework */,
+				18A41BF71C7209EE009B9D0F /* RxCocoa.framework */,
+				18A41BF81C7209EE009B9D0F /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +161,7 @@
 				1842E3221C6A3EAC00CD0EE2 /* Frameworks */,
 				1842E3231C6A3EAC00CD0EE2 /* Headers */,
 				1842E3241C6A3EAC00CD0EE2 /* Resources */,
+				18A41BF61C720942009B9D0F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,6 +243,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18A41BF61C720942009B9D0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1842E3211C6A3EAC00CD0EE2 /* Sources */ = {
@@ -375,6 +395,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SupportFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -396,6 +420,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SupportFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

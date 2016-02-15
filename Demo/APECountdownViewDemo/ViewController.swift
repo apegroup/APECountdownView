@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Change appearance
-        countdownView.size = CGSize(width: 40, height: 30)
+        countdownView.size = CGSize(width: 30, height: 40)
         countdownView.groupSpace = -3
         countdownView.sectionSpace = 3
         countdownView.gradientColor1 = UIColor(red: 0.290, green: 0.290, blue: 0.290, alpha: 1.000)

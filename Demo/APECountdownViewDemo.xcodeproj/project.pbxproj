@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18474AB61C6CBBF00073763F /* APECountdownView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		18474AB81C6CBC350073763F /* APECountdownView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 189571FD1C6B3102002BB07F /* APECountdownView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1856A1F21C6B30D5001C7051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A1F11C6B30D5001C7051 /* AppDelegate.swift */; };
 		1856A1F41C6B30D5001C7051 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A1F31C6B30D5001C7051 /* ViewController.swift */; };
 		1856A1F71C6B30D5001C7051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1F51C6B30D5001C7051 /* Main.storyboard */; };
 		1856A1F91C6B30D5001C7051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1F81C6B30D5001C7051 /* Assets.xcassets */; };
 		1856A1FC1C6B30D5001C7051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856A1FA1C6B30D5001C7051 /* LaunchScreen.storyboard */; };
+		1874EB241C720A6600C2E79F /* APECountdownView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4949C1C720A30002809FE /* APECountdownView.framework */; };
+		1874EB251C720A6600C2E79F /* APECountdownView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4949C1C720A30002809FE /* APECountdownView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18474AB91C6CBC350073763F /* PBXContainerItemProxy */ = {
+		1874EB261C720A6600C2E79F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+			containerPortal = 18E494961C720A30002809FE /* APECountdownView.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 1842E3251C6A3EAC00CD0EE2;
 			remoteInfo = APECountdownView;
 		};
-		189571FC1C6B3102002BB07F /* PBXContainerItemProxy */ = {
+		18E4949B1C720A30002809FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+			containerPortal = 18E494961C720A30002809FE /* APECountdownView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1842E3261C6A3EAC00CD0EE2;
 			remoteInfo = APECountdownView;
 		};
-		189571FE1C6B3102002BB07F /* PBXContainerItemProxy */ = {
+		18E4949D1C720A30002809FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+			containerPortal = 18E494961C720A30002809FE /* APECountdownView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1842E3301C6A3EAC00CD0EE2;
 			remoteInfo = APECountdownViewTests;
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18474AB81C6CBC350073763F /* APECountdownView.framework in Embed Frameworks */,
+				1874EB251C720A6600C2E79F /* APECountdownView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		1856A1F81C6B30D5001C7051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1856A1FB1C6B30D5001C7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1856A1FD1C6B30D5001C7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APECountdownView.xcodeproj; path = ../APECountdownView.xcodeproj; sourceTree = "<group>"; };
+		18E494961C720A30002809FE /* APECountdownView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APECountdownView.xcodeproj; path = ../APECountdownView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18474AB61C6CBBF00073763F /* APECountdownView.framework in Frameworks */,
+				1874EB241C720A6600C2E79F /* APECountdownView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 		1856A1E51C6B30D5001C7051 = {
 			isa = PBXGroup;
 			children = (
-				189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */,
+				18E494961C720A30002809FE /* APECountdownView.xcodeproj */,
 				1856A1F01C6B30D5001C7051 /* APECountdownViewDemo */,
 				1856A1EF1C6B30D5001C7051 /* Products */,
 			);
@@ -107,11 +107,11 @@
 			path = APECountdownViewDemo;
 			sourceTree = "<group>";
 		};
-		189571F81C6B3102002BB07F /* Products */ = {
+		18E494971C720A30002809FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				189571FD1C6B3102002BB07F /* APECountdownView.framework */,
-				189571FF1C6B3102002BB07F /* APECountdownViewTests.xctest */,
+				18E4949C1C720A30002809FE /* APECountdownView.framework */,
+				18E4949E1C720A30002809FE /* APECountdownViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				18474ABA1C6CBC350073763F /* PBXTargetDependency */,
+				1874EB271C720A6600C2E79F /* PBXTargetDependency */,
 			);
 			name = APECountdownViewDemo;
 			productName = APECountdownViewDemo;
@@ -167,8 +167,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 189571F81C6B3102002BB07F /* Products */;
-					ProjectRef = 189571F71C6B3102002BB07F /* APECountdownView.xcodeproj */;
+					ProductGroup = 18E494971C720A30002809FE /* Products */;
+					ProjectRef = 18E494961C720A30002809FE /* APECountdownView.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -179,18 +179,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		189571FD1C6B3102002BB07F /* APECountdownView.framework */ = {
+		18E4949C1C720A30002809FE /* APECountdownView.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = APECountdownView.framework;
-			remoteRef = 189571FC1C6B3102002BB07F /* PBXContainerItemProxy */;
+			remoteRef = 18E4949B1C720A30002809FE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		189571FF1C6B3102002BB07F /* APECountdownViewTests.xctest */ = {
+		18E4949E1C720A30002809FE /* APECountdownViewTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = APECountdownViewTests.xctest;
-			remoteRef = 189571FE1C6B3102002BB07F /* PBXContainerItemProxy */;
+			remoteRef = 18E4949D1C720A30002809FE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -221,10 +221,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18474ABA1C6CBC350073763F /* PBXTargetDependency */ = {
+		1874EB271C720A6600C2E79F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APECountdownView;
-			targetProxy = 18474AB91C6CBC350073763F /* PBXContainerItemProxy */;
+			targetProxy = 1874EB261C720A6600C2E79F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
