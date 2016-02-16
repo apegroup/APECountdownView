@@ -24,6 +24,9 @@
 
 import RxSwift
 
+/**
+The view model all logic for the framework.
+*/
 class CountdownViewModel {
     
     /**

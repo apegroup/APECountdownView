@@ -23,6 +23,10 @@
 // SOFTWARE.
 
 extension UIView {
+    
+    /**
+     Slide in view from the top.
+    */
     func slideInFromTop(duration: NSTimeInterval = 0.3, completionDelegate: AnyObject? = nil) {
         let slideInFromTopTransition = CATransition()
         

@@ -22,13 +22,47 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+/**
+Data structure that represents how much time it's left on the count down.
+*/
 struct CountdownTimeLeft {
+    /**
+     First number of the day.
+    */
     var day1: String = "-"
+    
+    /**
+     Second number of the day.
+    */
     var day2: String = "-"
+    
+    /**
+     First number of the hour.
+    */
     var hour1: String = "-"
+    
+    /**
+     Second number of the hour.
+    */
     var hour2: String = "-"
+    
+    /**
+     First number of the minute.
+    */
     var min1: String = "-"
+    
+    /**
+     Second number of the minute.
+    */
     var min2: String = "-"
+    
+    /**
+     First number of the second.
+    */
     var sec1: String = "-"
+    
+    /**
+     Second number of the second.
+    */
     var sec2: String = "-"
 }

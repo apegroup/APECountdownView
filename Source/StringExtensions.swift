@@ -23,6 +23,10 @@
 // SOFTWARE.
 
 extension String {
+    
+    /**
+     Get the first character of the string.
+    */
     func getFirstChar() -> String {
         if (self.characters.count == 0) {
             return self
@@ -31,6 +35,9 @@ extension String {
         return self[Range(start: self.startIndex, end: self.startIndex.advancedBy(1))]
     }
     
+    /**
+     Get the last character of the string.
+    */
     func getLastChar() -> String {
         if (self.characters.count == 0) {
             return self

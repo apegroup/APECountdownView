@@ -24,6 +24,9 @@
 
 import RxSwift
 
+/**
+A view with a countdown.
+*/
 @IBDesignable public class CountdownView: UIView {
 
     @IBOutlet weak var countdownNumberViewDay1: CountdownNumberView!
@@ -50,6 +53,9 @@ import RxSwift
     
     @IBOutlet var countdownTitleLabels: [UILabel]!
     
+    /**
+     Size of each block.
+    */
     @IBInspectable public var size: CGSize = CGSize(width: 40, height: 30) {
         didSet {
             for sizeWidthConstraint in countdownSizeWidthConstraints {
@@ -64,6 +70,9 @@ import RxSwift
         }
     }
     
+    /**
+     Space between each related block. eg. space between day1 and day2.
+    */
     @IBInspectable public var groupSpace: CGFloat = -3 {
         didSet {
             for groupConstraint in countdownGroupConstraints {
@@ -74,6 +83,9 @@ import RxSwift
         }
     }
     
+    /**
+     Space between each section block. eg. space between day2 and hour1.
+    */
     @IBInspectable public var sectionSpace: CGFloat = 3 {
         didSet {
             for sectionConstraint in countdownSectionConstraints {
@@ -88,6 +100,9 @@ import RxSwift
         }
     }
     
+    /**
+     Color of the first gradient. Top of the blocks.
+    */
     @IBInspectable public var gradientColor1: UIColor = UIColor(red: 0.290, green: 0.290, blue: 0.290, alpha: 1.000) {
         didSet {
             for numberView in countdownNumberViews {
@@ -98,6 +113,9 @@ import RxSwift
         }
     }
     
+    /**
+     Color of the second gradient. Middle of the blocks.
+    */
     @IBInspectable public var gradientColor2: UIColor = UIColor(red: 0.153, green: 0.153, blue: 0.153, alpha: 1.000) {
         didSet {
             for numberView in countdownNumberViews {
@@ -108,6 +126,9 @@ import RxSwift
         }
     }
     
+    /**
+     Color of the third gradient. Middle of the blocks.
+    */
     @IBInspectable public var gradientColor3: UIColor = UIColor(red: 0.071, green: 0.071, blue: 0.071, alpha: 1.000) {
         didSet {
             for numberView in countdownNumberViews {
@@ -118,6 +139,9 @@ import RxSwift
         }
     }
     
+    /**
+     Color of the fourth gradient. Bottom of the blocks.
+    */
     @IBInspectable public var gradientColor4: UIColor = UIColor(red: 0.004, green: 0.004, blue: 0.004, alpha: 1.000) {
         didSet {
             for numberView in countdownNumberViews {
@@ -130,7 +154,10 @@ import RxSwift
     
     private static let defaultBlockFont = UIFont.boldSystemFontOfSize(16)
     
-    // Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    /**
+     Font name of each block.
+     Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    */
     @IBInspectable var blockFontName: String = defaultBlockFont.fontName {
         didSet {
             let font = UIFont(name: blockFontName, size: blockFontSize)
@@ -138,7 +165,10 @@ import RxSwift
         }
     }
     
-    // Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    /**
+     Font size of each block.
+     Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    */
     @IBInspectable var blockFontSize: CGFloat = defaultBlockFont.pointSize {
         didSet {
             let font = blockFont.fontWithSize(blockFontSize)
@@ -146,16 +176,9 @@ import RxSwift
         }
     }
     
-    public var blockFont = defaultBlockFont {
-        didSet {
-            for numberView in countdownNumberViews {
-                numberView.label.font = blockFont
-            }
-            
-            layoutIfNeeded()
-        }
-    }
-    
+    /**
+     Font color of each block.
+    */
     @IBInspectable public var blockFontColor: UIColor = UIColor.whiteColor() {
         didSet {
             for numberView in countdownNumberViews {
@@ -166,9 +189,25 @@ import RxSwift
         }
     }
     
+    /**
+     Font of each block.
+    */
+    public var blockFont = defaultBlockFont {
+        didSet {
+            for numberView in countdownNumberViews {
+                numberView.label.font = blockFont
+            }
+            
+            layoutIfNeeded()
+        }
+    }
+    
     private static let defaultTitleFont = UIFont.systemFontOfSize(10)
     
-    // Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    /**
+     Font name of each title.
+     Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    */
     @IBInspectable var titleFontName: String = defaultTitleFont.fontName {
         didSet {
             let font = UIFont(name: titleFontName, size: titleFontSize)
@@ -176,7 +215,10 @@ import RxSwift
         }
     }
     
-    // Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    /**
+     Font size of each title.
+     Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
+    */
     @IBInspectable var titleFontSize: CGFloat = defaultTitleFont.pointSize {
         didSet {
             let font = titleFont.fontWithSize(titleFontSize)
@@ -184,6 +226,9 @@ import RxSwift
         }
     }
     
+    /**
+     Font color of each title.
+    */
     @IBInspectable public var titleFontColor: UIColor = UIColor.blackColor() {
         didSet {
             for titleLabel in countdownTitleLabels {
@@ -194,6 +239,9 @@ import RxSwift
         }
     }
     
+    /**
+     Font of each title.
+    */
     public var titleFont = defaultTitleFont {
         didSet {
             for titleLabel in countdownTitleLabels {
@@ -243,6 +291,9 @@ import RxSwift
             .addDisposableTo(disposeBag)
     }
     
+    /**
+     Setup xib.
+    */
     func xibSetup() {
         contentView = loadViewFromNib()
         contentView.frame = bounds
@@ -250,6 +301,9 @@ import RxSwift
         addSubview(contentView)
     }
     
+    /**
+     Load view from nib file.
+    */
     func loadViewFromNib() -> UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "CountdownView", bundle: bundle)
@@ -258,6 +312,9 @@ import RxSwift
         return view
     }
     
+    /**
+     Prepare for interface builder.
+    */
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         

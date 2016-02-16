@@ -22,16 +22,41 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+/**
+A view with a number and a block.
+*/
 @IBDesignable class CountdownNumberView: UIView {
 
+    /**
+     Label of the number. Do not change this text instead use text property of CountdownNumberView.
+    */
     var label: UILabel!
+    
+    /**
+     Color of the first gradient.
+    */
     var gradientColor1 = UIColor(red: 0.290, green: 0.290, blue: 0.290, alpha: 1.000)
+    
+    /**
+     Color of the second gradient.
+    */
     var gradientColor2 = UIColor(red: 0.153, green: 0.153, blue: 0.153, alpha: 1.000)
+    
+    /**
+     Color of the third gradient.
+    */
     var gradientColor3 = UIColor(red: 0.071, green: 0.071, blue: 0.071, alpha: 1.000)
+    
+    /**
+     Color of the fourth gradient.
+    */
     var gradientColor4 = UIColor(red: 0.004, green: 0.004, blue: 0.004, alpha: 1.000)
     
     private var clipView: UIView!
     
+    /**
+     The number in the view.
+    */
     @IBInspectable var text: String? {
         didSet {
             // Only change when it's a new text
