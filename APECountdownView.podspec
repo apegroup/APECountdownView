@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "APECountdownView"
   s.summary          = "Wanna countdown to something? Then you have come to the right place!"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.homepage         = "https://github.com/apegroup/APECountdownView"
   s.license          = 'MIT'
   s.author           = { "apegroup AB" => "support@apegroup.com" }
