@@ -23,7 +23,6 @@
 // SOFTWARE.
 
 #import <UIKit/UIKit.h>
-@import RxSwift;
 
 //! Project version number for APECountdownView.
 FOUNDATION_EXPORT double APECountdownViewVersionNumber;

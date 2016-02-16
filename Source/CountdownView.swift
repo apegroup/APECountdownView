@@ -22,6 +22,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+import RxSwift
+
 @IBDesignable public class CountdownView: UIView {
 
     @IBOutlet weak var countdownNumberViewDay1: CountdownNumberView!
