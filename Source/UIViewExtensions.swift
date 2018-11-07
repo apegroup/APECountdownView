@@ -27,19 +27,19 @@ extension UIView {
     /**
      Slide in view from the top.
     */
-    func slideInFromTop(duration: NSTimeInterval = 0.3, completionDelegate: AnyObject? = nil) {
+    func slideInFromTop(duration: TimeInterval = 0.3, completionDelegate: AnyObject? = nil) {
         let slideInFromTopTransition = CATransition()
         
         if let delegate: AnyObject = completionDelegate {
-            slideInFromTopTransition.delegate = delegate
+            slideInFromTopTransition.delegate = delegate as? CAAnimationDelegate
         }
         
-        slideInFromTopTransition.type = kCATransitionPush
-        slideInFromTopTransition.subtype = kCATransitionFromTop
+        slideInFromTopTransition.type = .push
+        slideInFromTopTransition.subtype = .fromTop
         slideInFromTopTransition.duration = duration
-        slideInFromTopTransition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        slideInFromTopTransition.fillMode = kCAFillModeRemoved
+        slideInFromTopTransition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        slideInFromTopTransition.fillMode = CAMediaTimingFillMode.removed
         
-        self.layer.addAnimation(slideInFromTopTransition, forKey: "slideInFromTopTransition")
+        self.layer.add(slideInFromTopTransition, forKey: "slideInFromTopTransition")
     }
 }

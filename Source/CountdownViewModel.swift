@@ -35,28 +35,28 @@ class CountdownViewModel {
      - parameter endDate when counter should end.
      - returns: Observable
     */
-    func observeCountdown(endDate: NSDate) -> Observable<CountdownTimeLeft> {
+    func observeCountdown(endDate: Date) -> Observable<CountdownTimeLeft> {
         return Observable.create { [weak self] observer in
-            let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-            let timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
-            
-            dispatch_source_set_timer(timer, 0, UInt64(0.1 * Double(NSEC_PER_SEC)), 0)
-            let cancel = AnonymousDisposable {
-                dispatch_source_cancel(timer)
+            let queue = DispatchQueue.global(qos: .default)
+            let timer = DispatchSource.makeTimerSource(flags: [], queue: queue)
+
+            timer.schedule(deadline: .now(), repeating: .milliseconds(100), leeway: .seconds(0))
+            let cancel = Disposables.create {
+                timer.cancel()
             }
-            dispatch_source_set_event_handler(timer, {
-                if cancel.disposed {
+            timer.setEventHandler {
+                if cancel.isDisposed {
                     return
                 }
                 
-                if self!.isCountdownCompleted(endDate) {
+                if self!.isCountdownCompleted(endDate: endDate) {
                     observer.onCompleted()
                 } else {
-                    observer.on(.Next(self!.parseCountdownTimeLeft(endDate)))
+                    observer.on(.next(self!.parseCountdownTimeLeft(endDate: endDate)))
                 }
-            })
+            }
             
-            dispatch_resume(timer)
+            timer.resume()
             
             return cancel
         }
@@ -68,14 +68,15 @@ class CountdownViewModel {
      - parameter endDate when counter should end.
      - returns: Days, hours, minutes and seconds left before countdown ends.
     */
-    private func parseCountdownTimeLeft(endDate: NSDate) -> CountdownTimeLeft {
-        let currentDate = NSDate()
-        let calendar = NSCalendar.currentCalendar()
-        let components = calendar.components([.Day, .Hour, .Minute, .Second], fromDate: currentDate, toDate: endDate, options: [])
+    private func parseCountdownTimeLeft(endDate: Date) -> CountdownTimeLeft {
+        let currentDate = Date()
+        let calendar = Calendar.current
+
+        let components = calendar.dateComponents([.day, .hour, .minute, .second], from: currentDate, to: endDate)
         
         var countdownTimeLeft = CountdownTimeLeft()
         
-        if (components.second < 0) {
+        if (components.second! < 0) {
             countdownTimeLeft.day1 = "0"
             countdownTimeLeft.day2 = "0"
             
@@ -89,19 +90,19 @@ class CountdownViewModel {
             countdownTimeLeft.sec2 = "0"
         }
         else {
-            let days = String(format: "%02d", components.day)
+            let days = String(format: "%02d", components.day!)
             countdownTimeLeft.day1 = days.getFirstChar()
             countdownTimeLeft.day2 = days.getLastChar()
             
-            let hours = String(format: "%02d", components.hour)
+            let hours = String(format: "%02d", components.hour!)
             countdownTimeLeft.hour1 = hours.getFirstChar()
             countdownTimeLeft.hour2 = hours.getLastChar()
             
-            let minutes = String(format: "%02d", components.minute)
+            let minutes = String(format: "%02d", components.minute!)
             countdownTimeLeft.min1 = minutes.getFirstChar()
             countdownTimeLeft.min2 = minutes.getLastChar()
             
-            let seconds = String(format: "%02d", components.second)
+            let seconds = String(format: "%02d", components.second!)
             countdownTimeLeft.sec1 = seconds.getFirstChar()
             countdownTimeLeft.sec2 = seconds.getLastChar()
         }
@@ -114,8 +115,8 @@ class CountdownViewModel {
 
      - returns: Completed or not
     */
-    private func isCountdownCompleted(endDate: NSDate) -> Bool {
-        let currentDate = NSDate()
-        return currentDate.compare(endDate) == .OrderedDescending
+    private func isCountdownCompleted(endDate: Date) -> Bool {
+        let currentDate = Date()
+        return currentDate.compare(endDate) == .orderedDescending
     }
 }
