@@ -28,21 +28,20 @@ extension String {
      Get the first character of the string.
     */
     func getFirstChar() -> String {
-        if (self.characters.count == 0) {
+        if (self.count == 0) {
             return self
         }
-        
-        return self[Range(start: self.startIndex, end: self.startIndex.advancedBy(1))]
+    
+        return String(self[self.startIndex..<self.index(after: self.startIndex)])
     }
     
     /**
      Get the last character of the string.
     */
     func getLastChar() -> String {
-        if (self.characters.count == 0) {
+        if (self.count == 0) {
             return self
         }
-        
-        return self[Range(start: self.endIndex.advancedBy(-1), end: self.endIndex)]
+        return String(self[self.index(before: self.endIndex)..<self.endIndex])
     }
 }

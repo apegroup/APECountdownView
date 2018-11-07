@@ -89,45 +89,45 @@ A view with a number and a block.
         addSubview(clipView)
         
         label = UILabel()
-        label.textColor = UIColor.whiteColor()
-        label.font = UIFont.boldSystemFontOfSize(16)
-        label.textAlignment = NSTextAlignment.Center
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textAlignment = .center
         clipView.addSubview(label)
     }
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         // General Declarations
-        let context = UIGraphicsGetCurrentContext()
+        let context = UIGraphicsGetCurrentContext()!
         
         // Gradient Declarations
-        let gradientColors = [gradientColor1.CGColor, gradientColor2.CGColor, gradientColor3.CGColor, gradientColor4.CGColor]
-        let gradient = CGGradientCreateWithColors(CGColorSpaceCreateDeviceRGB(), gradientColors, [0, 0.49, 0.51, 1])!
+        let gradientColors: [CGColor] = [gradientColor1.cgColor, gradientColor2.cgColor, gradientColor3.cgColor, gradientColor4.cgColor]
+        let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors as CFArray, locations: [0, 0.49, 0.51, 1])!
         
         // Shadow Declarations
         let shadow = NSShadow()
-        shadow.shadowColor = UIColor.blackColor().colorWithAlphaComponent(0.3)
+        shadow.shadowColor = UIColor.black.withAlphaComponent(0.3)
         shadow.shadowOffset = CGSize(width: 0, height: 3)
         shadow.shadowBlurRadius = 3
         
         // Rectangle Drawing
         let bezierFrame = CGRect(x: 3, y: 0, width: bounds.size.width - 6, height: bounds.size.height - 6)
         let rectanglePath = UIBezierPath(roundedRect: bezierFrame, cornerRadius: 5)
-        CGContextSaveGState(context)
-        CGContextSetShadowWithColor(context, shadow.shadowOffset, shadow.shadowBlurRadius, (shadow.shadowColor as! UIColor).CGColor)
-        CGContextBeginTransparencyLayer(context, nil)
+        context.saveGState()
+        context.setShadow(offset: shadow.shadowOffset, blur: shadow.shadowBlurRadius, color: (shadow.shadowColor as! UIColor).cgColor)
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
         rectanglePath.addClip()
-        let gradientPointStart = CGPoint(x: CGRectGetMidX(bounds), y: CGRectGetMinY(bounds))
-        let gradientPointEnd = CGPoint(x: CGRectGetMidX(bounds), y: CGRectGetMaxY(bounds))
-        CGContextDrawLinearGradient(context, gradient, gradientPointStart, gradientPointEnd, CGGradientDrawingOptions())
-        CGContextEndTransparencyLayer(context)
-        CGContextRestoreGState(context)
+        let gradientPointStart = CGPoint(x: bounds.midX, y: bounds.minY)
+        let gradientPointEnd = CGPoint(x: bounds.midX, y: bounds.maxY)
+        context.drawLinearGradient(gradient, start: gradientPointStart, end: gradientPointEnd, options: CGGradientDrawingOptions())
+        context.endTransparencyLayer()
+        context.restoreGState()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        backgroundColor = UIColor.clearColor()
-        
-        let labelFrame = CGRectMake(0, 1, bounds.size.width, bounds.size.height - 9)
+        backgroundColor = .clear
+
+        let labelFrame = CGRect(x: 0, y: 1, width: bounds.size.width, height: bounds.size.height - 9)
         label.frame = labelFrame
         clipView.frame = labelFrame
     }

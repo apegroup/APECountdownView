@@ -152,7 +152,7 @@ A view with a countdown.
         }
     }
     
-    private static let defaultBlockFont = UIFont.boldSystemFontOfSize(16)
+    private static let defaultBlockFont = UIFont.boldSystemFont(ofSize: 16)
     
     /**
      Font name of each block.
@@ -177,7 +177,7 @@ A view with a countdown.
     @available(*, unavailable, message : "This property is reserved for Interface Builder. Use 'blockFont' instead.")
     @IBInspectable var blockFontSize: CGFloat = defaultBlockFont.pointSize {
         willSet(newValue) {
-            let font = blockFont.fontWithSize(newValue)
+            let font = blockFont.withSize(newValue)
             blockFont = font
         }
     }
@@ -185,7 +185,7 @@ A view with a countdown.
     /**
      Font color of each block.
     */
-    @IBInspectable public var blockFontColor: UIColor = UIColor.whiteColor() {
+    @IBInspectable public var blockFontColor: UIColor = .white {
         didSet {
             for numberView in countdownNumberViews {
                 numberView.label.textColor = blockFontColor
@@ -208,7 +208,7 @@ A view with a countdown.
         }
     }
     
-    private static let defaultTitleFont = UIFont.systemFontOfSize(10)
+    private static let defaultTitleFont = UIFont.systemFont(ofSize: 10)
     
     /**
      Font name of each title.
@@ -233,7 +233,7 @@ A view with a countdown.
     @available(*, unavailable, message : "This property is reserved for Interface Builder. Use 'titleFont' instead.")
     @IBInspectable var titleFontSize: CGFloat = defaultTitleFont.pointSize {
         willSet(newValue) {
-            let font = titleFont.fontWithSize(newValue)
+            let font = titleFont.withSize(newValue)
             titleFont = font
         }
     }
@@ -241,7 +241,7 @@ A view with a countdown.
     /**
      Font color of each title.
     */
-    @IBInspectable public var titleFontColor: UIColor = UIColor.blackColor() {
+    @IBInspectable public var titleFontColor: UIColor = .black {
         didSet {
             for titleLabel in countdownTitleLabels {
                 titleLabel.textColor = titleFontColor
@@ -284,8 +284,8 @@ A view with a countdown.
      - parameter endDate: When the countdown should end.
      - parameter onCompleted: Triggers when countdown is completed.
     */
-    public func startCountdown(endDate: NSDate, onCompleted: (() -> Void)? = nil) {
-        countdownViewModel.observeCountdown(endDate)
+    public func startCountdown(endDate: Date, onCompleted: (() -> Void)? = nil) {
+        countdownViewModel.observeCountdown(endDate: endDate)
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] timeLeft in
                 self?.countdownNumberViewDay1.text = timeLeft.day1
@@ -300,7 +300,7 @@ A view with a countdown.
                 self?.countdownNumberViewSec1.text = timeLeft.sec1
                 self?.countdownNumberViewSec2.text = timeLeft.sec2
                 }, onCompleted: onCompleted)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     /**
@@ -309,7 +309,7 @@ A view with a countdown.
     func xibSetup() {
         contentView = loadViewFromNib()
         contentView.frame = bounds
-        contentView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(contentView)
     }
     
@@ -317,9 +317,9 @@ A view with a countdown.
      Load view from nib file.
     */
     func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: type(of: self))
+        let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: "CountdownView", bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         
         return view
     }
