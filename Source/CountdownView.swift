@@ -158,7 +158,7 @@ A view with a countdown.
      Font name of each block.
      Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
     */
-    @available(*, unavailable, message = "This property is reserved for Interface Builder. Use 'blockFont' instead.")
+    @available(*, unavailable, message : "This property is reserved for Interface Builder. Use 'blockFont' instead.")
     @IBInspectable var blockFontName: String = defaultBlockFont.fontName {
         willSet(newValue) {
             let font = UIFont(name: newValue, size: blockFont.pointSize)
@@ -174,7 +174,7 @@ A view with a countdown.
      Font size of each block.
      Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
     */
-    @available(*, unavailable, message = "This property is reserved for Interface Builder. Use 'blockFont' instead.")
+    @available(*, unavailable, message : "This property is reserved for Interface Builder. Use 'blockFont' instead.")
     @IBInspectable var blockFontSize: CGFloat = defaultBlockFont.pointSize {
         willSet(newValue) {
             let font = blockFont.fontWithSize(newValue)
@@ -214,7 +214,7 @@ A view with a countdown.
      Font name of each title.
      Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
     */
-    @available(*, unavailable, message = "This property is reserved for Interface Builder. Use 'titleFont' instead.")
+    @available(*, unavailable, message : "This property is reserved for Interface Builder. Use 'titleFont' instead.")
     @IBInspectable var titleFontName: String = defaultTitleFont.fontName {
         willSet(newValue) {
             let font = UIFont(name: newValue, size: titleFont.pointSize)
@@ -230,7 +230,7 @@ A view with a countdown.
      Font size of each title.
      Workaround IBInspectable does not support UIFont ( http://nsfail.net/post/125252321995/ibinspectable-should-support-nsfontuifont )
     */
-    @available(*, unavailable, message = "This property is reserved for Interface Builder. Use 'titleFont' instead.")
+    @available(*, unavailable, message : "This property is reserved for Interface Builder. Use 'titleFont' instead.")
     @IBInspectable var titleFontSize: CGFloat = defaultTitleFont.pointSize {
         willSet(newValue) {
             let font = titleFont.fontWithSize(newValue)
@@ -317,7 +317,7 @@ A view with a countdown.
      Load view from nib file.
     */
     func loadViewFromNib() -> UIView {
-        let bundle = NSBundle(forClass: self.dynamicType)
+        let bundle = NSBundle(forClass: type(of: self))
         let nib = UINib(nibName: "CountdownView", bundle: bundle)
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         
