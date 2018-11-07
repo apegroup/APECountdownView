@@ -12,6 +12,5 @@ Pod::Spec.new do |s|
   s.source_files     = 'Source/**/*'
   s.resources        = ['Resources/**/*']
   s.frameworks       = 'UIKit'
-  s.dependency 'RxSwift', '~> 2.2'
-  s.dependency 'RxCocoa', '~> 2.2'
+  s.dependency 'RxSwift', '~> 4.4'
 end
